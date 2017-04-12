@@ -89,7 +89,7 @@ export class BadgeIconToolbarAndroid extends Icon.ToolbarAndroid {
 
 Now you can simply use `BadgeIconToolbarAndroid` instead of `ToolbarAndroid` or `Icon.ToolbarAndroid` - you'll have support for both badges and vector icons.
 
-Admittedly, the solution is not particularly elegant as we've utilised internal knowledge of however _react-native-vector-icons_ works, however it gets the job done.
+Admittedly, the solution is not particularly elegant as we've utilised internal knowledge of how _react-native-vector-icons_ works, however it gets the job done.
 
 ## How does this library work?
 
