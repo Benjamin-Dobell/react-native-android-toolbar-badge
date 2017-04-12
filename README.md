@@ -1,5 +1,7 @@
 # react-native-android-toolbar-badge
 
+![npm version](https://img.shields.io/npm/v/react-native-android-toolbar-badge.svg)
+
 A simple module that allows you to attach badges to action icons in your Android toolbars.
 
 ## Install
@@ -44,7 +46,7 @@ import { BadgeToolbarAndroid } from 'react-native-android-toolbar-badge'
 then in your render method, you can use `BadgeToolbarAndroid` exactly as you would `ToolbarAndroid` e.g.
 
 ```
-<BadgeIconToolbarAndroid
+<BadgeToolbarAndroid
 	navIcon={navIcon}
 	title="Title"
 	titleColor="#111"
@@ -59,7 +61,7 @@ However, now your actions can include an optional `badge` property. `badge` is a
 ### `badge` Properties
 
 | Property        | Type   | Default | Description                                                                                                                                                                                                                |
-| --------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| --------------- | ------ | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | width           | number | 32      | Width of the badge bounds (including transparent region around the action icon).                                                                                                                                           |
 | height          | number | 32      | Width of the badge bounds (including transparent region around the action icon).                                                                                                                                           |
 | backgroundColor | color  | '#f00'  | Fill color of the badge circular background.                                                                                                                                                                               |
@@ -68,7 +70,7 @@ However, now your actions can include an optional `badge` property. `badge` is a
 | maxNumber       | number | 9       | The maximum number displayed on the badge. If `number` exceeds this value, 3 vertically centered dots ("...") are displayed instead. This functionality exists to stop long numbers overflowing outside the badge circle.  |
 | number          | number | 0       | If the value is zero, the badge will be hidden. If the value is greater than zero, the number (or 3 dots) will be displayed. If you wish to show the badge without any text, you can specify a negative number.            |
 
-**Note:** Icons found in an Android toolbar are typically 24dp x 24dp (20dp x 20dp safe area) images. It's recommended you stickt to that size. The default badge size of 32dp x 32dp gives the badge some additional room to be displayed without completely obscuring the icon or having illegibly small font. Your icon will _not_ be stretched.
+**Note:** Icons found in an Android toolbar are typically 24dp x 24dp (20dp x 20dp safe area). It's recommended you stick to that size. The default badge size of 32dp x 32dp gives the badge some additional room to be displayed without completely obscuring the icon or having illegibly small font. Your icon will _not_ be stretched.
 
 ### Usage with  [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 
