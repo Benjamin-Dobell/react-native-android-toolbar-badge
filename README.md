@@ -16,7 +16,7 @@ Then link the native code into your Android project with:
 
 After linking the code you'll need to make a small change to the native Android (Java) code included in your React Native app.
 
-In the file(s) the define your React Native Android activities (classes that extends `ReactActivity`), typically just `MainActivity`, you'll need to add the following imports:
+In the file(s) that define your React Native Android activities (classes that extends `ReactActivity`), typically just `MainActivity`, you'll need to add the following imports:
 
 ```
 import au.com.glassechidna.react.drawables.DrawableProviderResourcesWrapper;
@@ -28,8 +28,8 @@ then inside your class definition, add/override `getResources()` as follows:
 ```
     @Override
     public Resources getResources()
-    {
-        return new DrawableStoreResourcesWrapper(ToolbarBadgeAndroidModule.getDrawableStore(), super.getResources());
+    
+        return new DrawableProviderResourcesWrapper(super.getResources(), ToolbarBadgeAndroidModule.getDrawableStore());{
     }
 ```
 
