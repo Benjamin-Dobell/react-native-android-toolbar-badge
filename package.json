@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-toolbar-badge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Native support for displaying badges in ToolbarAndroid",
   "main": "index.js",
   "keywords": [
@@ -9,7 +9,9 @@
     "android",
     "toolbar",
     "toolbarandroid",
-    "badge"
+    "badge",
+    "action",
+    "icon"
   ],
   "author": {
     "name": "Benjamin Dobell",
