@@ -33,6 +33,40 @@ then inside your class definition, add/override `getResources()` as follows:
     }
 ```
 
+## Apperance
+
+### Default
+
+![Default - 3](https://benjamin-dobell.github.io/react-native-android-toolbar-badge/screenshots/default.png)
+
+![Default - 7](https://benjamin-dobell.github.io/react-native-android-toolbar-badge/screenshots/default_7.png)
+
+### No Number
+
+![No Number](https://benjamin-dobell.github.io/react-native-android-toolbar-badge/screenshots/no_number.png)
+
+### Large Number (Prevent Overflow)
+
+![Large Number](https://benjamin-dobell.github.io/react-native-android-toolbar-badge/screenshots/large_number.png)
+
+### Automatically Hides (`number` == 0)
+
+![Badge Hidden](https://benjamin-dobell.github.io/react-native-android-toolbar-badge/screenshots/blank.png)
+
+### Custom Background Color
+
+![Background Color](https://benjamin-dobell.github.io/react-native-android-toolbar-badge/screenshots/background_color.png)
+
+### Custom Text (and Background) Color
+
+![Text Color](https://benjamin-dobell.github.io/react-native-android-toolbar-badge/screenshots/background_and_text_color.png)
+
+### Custom Text Size
+
+![Large Text](https://benjamin-dobell.github.io/react-native-android-toolbar-badge/screenshots/large_text.png)
+
+![Small Text](https://benjamin-dobell.github.io/react-native-android-toolbar-badge/screenshots/small_text.png)
+
 ## Basic Usage
 
 Instead of directly using the `ToolbarAndroid` provided by React Native, you'll use `BadgeToolbarAndroid`, which is just a simple wrapper around `ToolbarAndroid`.
