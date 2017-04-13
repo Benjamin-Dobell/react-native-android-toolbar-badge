@@ -33,7 +33,7 @@ then inside your class definition, add/override `getResources()` as follows:
     }
 ```
 
-## Apperance
+## Appearance
 
 ### Default
 
@@ -129,7 +129,7 @@ Admittedly, the solution is not particularly elegant as we've utilised internal 
 
 React Native's `ToolbarAndroid` uses the real Android SDK-provided toolbar, not a react view hierarchy. Doing so amounts to a more consistent experience for Android users, however we can't customise the toolbar as we would a regular React Native view hierarchy.
 
-In particular, action icons are not specified as views at all. Rather, they're specified as either a static image, or a "[drawable](https://developer.android.com/reference/android/graphics/drawable/Drawable.html)", which is just a general abstraction for something that can be drawn, and much more light-weight than a view. Static images obviously won't do for badges (not without a lot of pre-generated assets), however drawables afford as much greater flexibility.
+In particular, action icons are not specified as views at all. Rather, they're specified as either a static image, or a "[drawable](https://developer.android.com/reference/android/graphics/drawable/Drawable.html)", which is just a general abstraction for something that can be drawn, and much more light-weight than a view. Static images obviously won't do for badges (not without a lot of pre-generated assets), however drawables afford us much greater flexibility.
 
 Unfortunately, given that drawables are inherently an Android feature/representation, React Native doesn't expose a simple means to utilise drawables from Javascript.
 
