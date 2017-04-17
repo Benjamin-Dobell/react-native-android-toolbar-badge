@@ -27,9 +27,8 @@ then inside your class definition, add/override `getResources()` as follows:
 
 ```
     @Override
-    public Resources getResources()
-    
-        return new DrawableProviderResourcesWrapper(super.getResources(), ToolbarBadgeAndroidModule.getDrawableStore());{
+    public Resources getResources() {
+        return new DrawableProviderResourcesWrapper(super.getResources(), ToolbarBadgeAndroidModule.getDrawableStore());
     }
 ```
 
